@@ -66,33 +66,7 @@ describe('Testa o componente Pokedex', () => {
     expect(allBtn).toBeInTheDocument();
 
     const nextBtn = screen.getByRole('button', { name: /próximo pokémon/i });
-    /* const allBtns = screen.getAllByRole('button');
-    expect(allBtns[0]).toBeInTheDocument();
 
-    userEvent.click(allBtns[0]);
-    const pokeImg = screen.getByRole('img');
-    expect(pokeImg).toHaveAttribute('src', pikachuSrc);
-
-    userEvent.click(allBtns[1]);
-    expect(pokeImg).toHaveAttribute('src', pikachuSrc);
-
-    userEvent.click(allBtns[2]);
-    expect(pokeImg).toHaveAttribute('src', 'https://cdn2.bulbagarden.net/upload/0/0a/Spr_5b_004.png');
-
-    userEvent.click(allBtns[3]);
-    expect(pokeImg).toHaveAttribute('src', 'https://cdn2.bulbagarden.net/upload/8/83/Spr_5b_010.png');
-
-    userEvent.click(allBtns[4]);
-    expect(pokeImg).toHaveAttribute('src', 'https://cdn2.bulbagarden.net/upload/1/18/Spr_5b_023.png');
-
-    userEvent.click(allBtns[5]);
-    expect(pokeImg).toHaveAttribute('src', 'https://cdn2.bulbagarden.net/upload/8/88/Spr_5b_065_m.png');
-
-    userEvent.click(allBtns[6]);
-    expect(pokeImg).toHaveAttribute('src', 'https://cdn2.bulbagarden.net/upload/4/40/Spr_5b_143.png');
-
-    userEvent.click(allBtns[7]);
-    expect(pokeImg).toHaveAttribute('src', 'https://cdn2.bulbagarden.net/upload/2/2c/Spr_5b_148.png'); */
     const electricBtn = screen.getByRole('button', { name: /electric/i });
     expect(electricBtn).toBeInTheDocument();
     expect(electricBtn).toHaveAttribute(att, testId);
